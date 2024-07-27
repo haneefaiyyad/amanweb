@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spAcc software</title>
+    <!-- Add any specific CSS styles or fonts you prefer here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #f1efe4;
+            color: #333; /* Darker text color */
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #abedf3; /* Light blue background */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Animation for h1 */
+        h1 {
+            position: relative;
+            animation: slide 2s infinite;
+            color: #670ae0; /* Orange text color */
+        }
+        @keyframes slide {
+            100%, 100% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(20px);
+            }
+        }
+        /* Styling for buttons */
+        button {
+            background-color: #9df78b; /* Yellow background */
+            color: #333; /* Darker text color */
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e90592; /* Orange background on hover */
+            color: #fff; /* White text color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="logo.png" alt="Your Logo">
+        <h1>Welcome to spAcc software</h1>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>We provide accounting solutions just perfect for your business.</p>
+        </section>
+        
+        <section id="portfolio">
+            <h2>Our Info</h2>
+            <!-- Add your portfolio items here -->
+            Industry Leading Accounting and ERP Solutions
+        </section>
+        
+        <section id="blog">
+            <h2>Our Mission</h2>
+            <!-- Add your blog posts here -->
+            We intend to provide reliable, efficient, simple, and cost-effective customizable accounting solutions for small and medium scale businesses.
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>support@spaccsoftware.com</p>
+        </section>
+        <section id="More Info">
+            <h2>More Info</h2>
+            <button id="more-info-button">Show More Info</button>
+            <div id="more-info-content">
+                <!-- Additional information goes here -->
+               
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // JavaScript to toggle the visibility of the More Info content
+        const moreInfoButton = document.getElementById("more-info-button");
+        const moreInfoContent = document.getElementById("more-info-content");
+
+        moreInfoButton.addEventListener("click", () => {
+            if (moreInfoContent.style.display === "none" || moreInfoContent.style.display === "") {
+                moreInfoContent.style.display = "block";
+                moreInfoButton.textContent = "Hide More Info";
+            } else {
+                moreInfoContent.style.display = "none";
+                moreInfoButton.textContent = "Show More Info";
+            }
+        });
+    </script>
+</body>
+</html>
