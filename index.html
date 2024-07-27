@@ -27,13 +27,13 @@
         h1 {
             position: relative;
             animation: slide 2s infinite;
-            color: #670ae0; /* Orange text color */
+            color: #FF8C00; /* Corrected to an actual orange color */
         }
         @keyframes slide {
-            100%, 100% {
+            0%, 100% {
                 transform: translateX(0);
             }
-            100% {
+            50% {
                 transform: translateX(20px);
             }
         }
@@ -81,9 +81,8 @@
         <section id="More Info">
             <h2>More Info</h2>
             <button id="more-info-button">Show More Info</button>
-            <div id="more-info-content">
+            <div id="more-info-content" style="display: none;">
                 <!-- Additional information goes here -->
-               
             </div>
         </section>
     </div>
