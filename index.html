@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>spAcc software </title>
+    <title>spAcc software</title>
     <!-- Add any specific CSS styles or fonts you prefer here -->
     <style>
         body {
@@ -27,14 +27,14 @@
         h1 {
             position: relative;
             animation: slide 2s infinite;
-            color: #FF8C00; /* Corrected to an actual orange color */
+            color: #e40606; /* Orange text color */
         }
         @keyframes slide {
-            0%, 100% {
+            100%, 100% {
                 transform: translateX(0);
             }
-            50% {
-                transform: translateX(20px);
+            100% {
+                transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
             }
         }
         /* Styling for buttons */
@@ -54,7 +54,7 @@
 <body>
     <header>
         <img class="logo" src="logo.png" alt="Your Logo">
-        <h1>മുഹമ്മദ്‌ ഹനീഫ കെ </h1>
+        <h1>Welcome to spAcc software</h1>
     </header>
     <div class="container">
         <section id="about">
@@ -76,13 +76,14 @@
         
         <section id="contact">
             <h2>Contact Me</h2>
-            <p>support@spaccsoftware.com</p>
+            <a href="https://wa.me/9400018222" target="_blank">Chat with us on WhatsApp</a>
         </section>
         <section id="More Info">
             <h2>More Info</h2>
             <button id="more-info-button">Show More Info</button>
-            <div id="more-info-content" style="display: none;">
+            <div id="more-info-content">
                 <!-- Additional information goes here -->
+               
             </div>
         </section>
     </div>
